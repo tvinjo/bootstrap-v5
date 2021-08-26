@@ -7,10 +7,15 @@
     <title>Learning Bootstrap v5 with SASS</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="assets/vendors/css/glightbox.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- START THE NAVBAR SECTION -->
-    <nav class="navbar navbar-expand-lg navbar-dark menu">
+    <!-- /////////////////////////////////////////////////////
+                    NAVBAR SECTION 
+    /////////////////////////////////////////////////////-->
+    <nav class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top">
         <div class="container">
           <a class="navbar-brand" href="#">
               <img src="images/logo.png" alt="Logo image">
@@ -45,6 +50,54 @@
           </div>
         </div>
       </nav>
+
+    <!-- /////////////////////////////////////////////////////
+                    INTRO SECTION 
+    /////////////////////////////////////////////////////-->
+    <section id="home" class="intro-section">
+        <div class="container">
+            <div class="row align-items-center text-white">
+                <!-- Content for the intro -->
+                <div class="col-md-6 intros">
+                    <h1 class="display-2">
+                        <span class="display-2-intro">Hey!, I'm Vincent</span>
+                        <span class="display-2-description lh-base">this is a multi-purpose responsive layout created with bootstrap v5. (here you can place your description text)</span>
+                    </h1>
+                    <button type="button" class="rounded-pill btn-rounded">Get in Touch
+                        <span>
+                            <i class="fas fa-arrow-right"></i>
+                        </span>
+                    </button>
+                </div>
+                <!-- Content fot the video -->
+                <div class="col-md-6 intros text-end">
+                    <div class="video-box">
+                        <img src="images/arts/intro-section-illustration.png" alt="video illustration" class="img-fluid">
+                        <a href="#" class="glightbox position-absolute top-50 start-50 translate-middle">
+                            <span>
+                                <i class="fas fa-play-circle"></i>
+                            </span>
+                            <span class="border-animation border-animation-border-1"></span>
+                            <span class="border-animation border-animation-border-2"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,192L30,176C60,160,120,128,180,138.7C240,149,300,203,360,202.7C420,203,480,149,540,154.7C600,160,660,224,720,234.7C780,245,840,203,900,202.7C960,203,1020,245,1080,266.7C1140,288,1200,288,1260,266.7C1320,245,1380,203,1410,181.3L1440,160L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path></svg>
+    </section>
+
+    <script src="/assets/vendors/js/glightbox.min.js"></script>
+
+    <script type="text/javascript">
+        const lightbox = GLightbox({
+            'href': 'https://www.youtube.com/watch?v=iJKCj8uAHz8',
+            'type': 'video',
+            'source': 'youtube', 
+            'width': 900,
+            'autoPlayVideos': 'true',
+        });   
+    </script>
 
     <script src="/assets/js/bootstrap.bundle.js"></script>
 </body>
