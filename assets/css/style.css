@@ -11127,7 +11127,7 @@ textarea.form-control-lg {
   padding: 0.9375rem 4.375rem 0.9375rem 1.25rem;
   font-weight: 700;
   margin: 0;
-  border: 0.1rem solid rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.6);
   background-color: #fff;
 }
 @media (max-width: 575.98px) {
@@ -11245,6 +11245,112 @@ textarea.form-control-lg {
 }
 .companies-logo-box img:hover {
   filter: grayscale(150);
+}
+
+.footer {
+  padding-top: 1rem;
+  background-color: #151414;
+}
+
+.contact-box {
+  position: relative;
+}
+.contact-box-icon {
+  width: 2rem;
+  stroke: #9926f0;
+  padding-top: 0.5rem;
+}
+@media (min-width: 576px) {
+  .contact-box-icon {
+    width: 4rem;
+  }
+}
+.contact-box-info {
+  padding: 0.4rem;
+  font-weight: 600;
+}
+.contact-box-info-title {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+@media (min-width: 576px) {
+  .contact-box-info-title {
+    font-size: 1.4rem;
+  }
+}
+.contact-box-info-subtitle {
+  color: #6c757d;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+@media (min-width: 576px) {
+  .contact-box-info-subtitle {
+    font-size: 1rem;
+  }
+}
+
+.footer-social-media a {
+  color: #fff;
+}
+.footer-social-media a i {
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+@media (min-width: 576px) {
+  .footer-social-media a i {
+    font-size: 1.6rem;
+  }
+}
+
+.company-list {
+  display: block;
+  list-style-type: none;
+  position: relative;
+}
+.company-list li {
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+}
+.company-list li a {
+  color: #fff;
+  text-decoration: none;
+}
+.company-list li a:hover {
+  color: #9926f0;
+}
+
+.footer-bottom {
+  background-color: #000;
+}
+.footer-bottom-copyright {
+  color: #6c757d;
+  font-weight: 400;
+}
+.footer-bottom-copyright a {
+  color: #dee2e6;
+  text-decoration: none;
+}
+.footer-bottom-copyright a:hover {
+  color: #9926f0;
+  text-decoration: underline;
+}
+
+.back-to-top {
+  position: fixed;
+  width: 3rem;
+  height: 3rem;
+  right: 1.875rem;
+  bottom: 1.875rem;
+  z-index: 9999;
+}
+.back-to-top i {
+  color: #fff;
+  font-size: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .get-started {
